@@ -8,7 +8,12 @@ body {
   height: 100vh;
   width: 100vw;
   /* your properties here */
+  display: grid;
+grid-template-columns:auto;
+grid-template-rows:auto;
+  
 }
+
 
 .grid-item {
   background-color: grey;
@@ -16,3 +21,14 @@ body {
 }
 
 /* add the .bigItem class */
+
+
+.bigItem {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-row: 2 / 4;
+  grid-column: 2 / 4;
+  grid-area: 2 / 2 / 4 / 4;
+}
